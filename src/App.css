@@ -1,0 +1,165 @@
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+form {
+  background-color: #fff;
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+.message {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.post {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  transition: transform 0.2s ease;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+}
+
+.post h3 {
+  margin: 0 0 10px;
+  color: #34495e;
+}
+
+.post p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+button.edit-btn,
+button.delete-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.edit-btn {
+  background-color: #f39c12;
+  color: white;
+}
+
+button.edit-btn:hover {
+  background-color: #e67e22;
+}
+
+button.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.ckeditor {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+  .post, form {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.95rem;
+  }
+
+  button.edit-btn,
+  button.delete-btn,
+  form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
